@@ -1,9 +1,5 @@
-/* tsParticles.load(@dom-id, @options); */
-tsParticles.load("tsparticles", {
+const tsOptions = {
   particles: {
-    color: {
-      value: "#f0f"
-    },
     move: {
       bounce: true,
       direction: MoveDirection.bottom,
@@ -18,13 +14,6 @@ tsParticles.load("tsparticles", {
     },
     shape: {
       type: "image",
-      stroke: {
-        width: 0,
-        color: "#000000"
-      },
-      polygon: {
-        nb_sides: 5
-      },
       image: {
         src: "poop.png",
         width: 100,
@@ -36,7 +25,10 @@ tsParticles.load("tsparticles", {
       value: 50
     },
   },
-}).then((container) => {
+};
+
+/* tsParticles.load(@dom-id, @options); */
+tsParticles.load("tsparticles", tsOptions).then((container) => {
   /* tsParticles.setOnClickHandler(@callback); */
   /* this will be fired from all particles loaded */
   tsParticles.setOnClickHandler((event, particles) => {
