@@ -16,21 +16,21 @@ tsParticles.load("tsparticles", {
       random: false,
       value: 0.9
     },
-		shape: {
-			type: "image",
-			stroke: {
-				width: 0,
-				color: "#000000"
-			},
-			polygon: {
-				nb_sides: 5
-			},
-			image: {
-				src: "poop.png",
-				width: 100,
-				height: 100
-			}
-		},
+    shape: {
+      type: "image",
+      stroke: {
+        width: 0,
+        color: "#000000"
+      },
+      polygon: {
+        nb_sides: 5
+      },
+      image: {
+        src: "poop.png",
+        width: 100,
+        height: 100
+      }
+    },
     size: {
       random: true,
       value: 50
